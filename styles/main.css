@@ -1,0 +1,203 @@
+    body {
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 9;
+        top: 0;
+    }
+    
+    .main {
+        width: 100%;
+        margin: auto;
+        padding-top: 65px;
+        position: relative;
+    }
+
+
+    .title {
+        background-color: white;
+        border-bottom: 1px solid #FFFFFF;
+        cursor: pointer;
+        padding: 15px;
+        color: black;
+        margin: 0;
+    
+    }
+    .title:hover{
+        color: green;
+    }
+    
+    ul {
+        background-color: white;
+        display: none;
+        margin: 0;
+    }
+
+    .blurb{
+         font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 0px 2px 2px 10px;
+
+    }
+
+    .blurb2{
+          font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 2px 2px 10px;
+
+
+    }
+    
+    .resume-title {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 4%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    
+    .line {
+        border-bottom: 3px solid black;
+        width: 40px;
+        margin-bottom: 4%
+    }
+    
+    .resume-title-des {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .resume-place-des {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
+    
+    @media only screen and (min-width: 360px) {
+        .container-nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            align-content: center;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            display: flex;
+        }
+        .name-container {
+            width: 30%;
+            padding-left: 20px;
+            padding-right:25px;
+            padding-top: 5px;
+        }
+        .about-container{
+              padding-left: 15px;
+            padding-right:25px;
+            padding-top: 5px;
+        }
+        .name {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 25px;
+            font-weight: 900;
+            /* text-transform: uppercase*/
+            ;
+            color: black letter-spacing: 1px;
+        }
+        .resume {
+            width: 100%;
+            justify-content: space-between;
+        }
+        .column {
+            width: 75%;
+            padding: 4%;
+        }
+        .block {
+            padding: 1%;
+            font-family: 'Roboto Condensed', sans-serif;
+            float: left;
+        }
+        .des-1 {
+            padding-bottom: 5%;
+        }
+        .image-container {
+            width: 100%;
+            height: auto;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    .email {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 14px;
+        align-self: right;
+    }
+   }
+
+
+   /*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+
+.accordion {
+    overflow:hidden;
+/*    box-shadow:0px 1px 3px rgba(0,0,0,0.25);*/
+    border-radius:3px;
+    background:white;
+    width: 100%;
+    height: auto;
+
+}
+.accordion img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:20px;
+
+    display:inline-block;
+/*    border-bottom:1px solid #1a1a1a;
+*/    background:white;
+    transition:all linear 0.15s;
+    /* Type */
+    
+    color:black;
+    text-decoration:none;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:white;
+    /* Type */
+    text-decoration:none;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:10px;
+    display:none;
+}
